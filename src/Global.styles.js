@@ -141,6 +141,24 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 400;
   }
   h1,
+  .h1{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    @media (min-width: 375px){
+      font-size: 35px;
+      line-height: 39px;
+    }
+    @media (min-width: 768px){
+      font-size: 50px;
+    line-height: 54px;
+    }
+    @media (min-width: 992px){
+      font-size: 64px;
+    line-height: 68px;
+    }
+
+  }
   
 
   p {
@@ -194,5 +212,12 @@ export const GlobalStyles = createGlobalStyle`
       height: 7px;
     }
     }
+  }
+  .form{
+    width: 100%;
+   @media (min-width: 800px){
+    width: auto;
+    
+   }
   }
 `;

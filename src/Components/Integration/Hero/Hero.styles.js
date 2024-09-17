@@ -1,14 +1,23 @@
 import styled from "styled-components";
-import hero from "../../../images/integration/hero.png";
 export const HeroWrap =styled.div`
 background: var(--light-gray);
+padding: 30px 0 ;
 .imgwrap {
   position: relative;
-  background-image: url(${hero}) ;
+  background-image: url(${(props) => props.$bg}) ;
   background-size: cover;
-  height: 400px; /* Adjust as needed */
+  min-height: 500px; 
   width: 100%;
   background-position: center;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  @media (min-width: 992px){
+    flex-direction: row;
+  }
 }
 
 .overlay {
@@ -25,6 +34,7 @@ background: var(--light-gray);
 .content {
   position: relative;
   z-index: 2;
+  color: var(--white);
 }
 
 `;

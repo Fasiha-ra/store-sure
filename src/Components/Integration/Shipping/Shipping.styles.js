@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const ShippingWrap = styled.div`
+margin-bottom: 50px;
   .wrap {
     display: flex;
     justify-content: center;

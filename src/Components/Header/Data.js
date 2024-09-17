@@ -5,7 +5,7 @@ export const navData=[
       },
       {
         name: "Who We Are",
-        link: "/who-we-are",
+        link: "/who_we_are",
       },
       {
         name: "Integrations",

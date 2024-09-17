@@ -1,15 +1,16 @@
 import React from 'react'
 import { HeroWrap } from './Hero.styles'
+import Form from '../../Form'
 
-const Hero = () => {
+const Hero = ({heading, bg}) => {
   return (
-    <HeroWrap>
+    <HeroWrap $bg={bg}>
         <div className="container">
            <div className="imgwrap">
-          
-           </div>
            <div className="overlay"></div>
-           <div className="content">hero</div>
+           <h1 className="content">{heading}</h1>
+           <div className="form"><Form/></div>
+           </div>
         </div>
     </HeroWrap>
   )

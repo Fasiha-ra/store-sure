@@ -26,7 +26,7 @@ const Shipping = () => {
   ];
 
  
-  const [visibleImageIndex, setVisibleImageIndex] = useState(null);
+  const [visibleImageIndex, setVisibleImageIndex] = useState(0);
 
  
   const handleImageClick = (index) => {

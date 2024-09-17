@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import AdminLayout from "./Components/AdminLayout";
 import Home from "./pages/index";
 import Integration from "./pages/Integration";
+import WhoeWeAre from "./pages/who_we_are";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
             {/* <Route path='/' element={<Header/>}/> */}
             <Route path="/" element={<Home />} />
             <Route path="/Integration" element={<Integration />} />
+            <Route path="/who_we_are" element={<WhoeWeAre/>} />
             {/* <Route path='/' element={<Footer/>}/> */}
           </Route>
         </Routes>
