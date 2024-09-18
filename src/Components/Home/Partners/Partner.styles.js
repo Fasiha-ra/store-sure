@@ -1,31 +1,21 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 export const SliderContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-text-align: center;
+  text-align: center;
   .slider-wrapp {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .heading{
+  .heading {
     margin-bottom: 30px;
   }
 `;
 export const Trust = styled.div`
   overflow: hidden;
-  /* background: ${({ $bg }) => ($bg ? $bg : "var(--white)")}; */
-  /* box-shadow: ${({ $shadow }) => 
-    $shadow ? "none" : "0px 0px 21px 0px #8E8E8E29"};
-  ${({ $rounded }) =>
-    $rounded &&
-    css`
-      border-radius: 40px;
-      @media screen and (min-width: 768px) {
-        border-radius: 60px;
-      }
-    `}*/
+  
 
   .slick-slider {
     width: 100%;
@@ -56,17 +46,19 @@ export const Trust = styled.div`
   }
 `;
 export const SliderWrapper = styled.div`
-  max-width: 80px;
+  max-width: 120px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    max-width: 120px;
+    max-width: 169px;
     padding: 20px 0;
   }
 `;
 export const SliderImage = styled.img`
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
-  object-fit: contain;
-  max-width: 50px;
-  min-height: 32px;
+  max-width: 120px;
+  @media screen and (min-width: 768px) {
+    max-width: 169px;
+  }
+  
 `;

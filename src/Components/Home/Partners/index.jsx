@@ -4,38 +4,36 @@ import {
   SliderImage,
   SliderWrapper,
   Trust,
-} from "./Platform.styles";
+} from "./Partner.styles";
 
-import allexpress from "../../../images/integration/allexpress.png";
-import client1 from "../../../images/integration/client1.png";
-import client2 from "../../../images/integration/client2.png";
-import daraz from "../../../images/integration/daraz.png";
-import ebay from "../../../images/integration/ebay.png";
-import playstore from "../../../images/integration/playstore.png";
-import shopify from "../../../images/integration/shopify.png";
-import stripe from "../../../images/integration/stripe.png";
-import walmat from "../../../images/integration/walmat.png";
-import wordpress from "../../../images/integration/wordpress.png";
+import asus from "../../../images/home/asus.png";
+import cisco from "../../../images/home/cisco.png";
+import honeywell from "../../../images/home/honeywell.png";
+import juniper from "../../../images/home/juniper.png";
+import link from "../../../images/home/link.png";
+import siemens from "../../../images/home/siemens.png";
+import hp from "../../../images/home/hp.png";
+import intel from "../../../images/home/intel.png";
+import bar from "../../../images/home/bar.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const platforms = [
-  { src: playstore, alt: "playstore" },
-  { src: wordpress, alt: "wordpress" },
-  { src: daraz, alt: "daraz" },
-  { src: stripe, alt: "stripe" },
-  { src: shopify, alt: "shopify" },
-  { src: ebay, alt: "ebay" },
-  { src: allexpress, alt: "allexpress" },
-  { src: client1, alt: "client1" },
-  { src: walmat, alt: "walmat" },
-  { src: client2, alt: "client2" },
+  { src: siemens, alt: "siemens" },
+  { src:juniper, alt: "juniper" },
+  { src: asus, alt: "asus" },
+  { src: cisco, alt: "cisco" },
+  { src: intel, alt: "intel" },
+  { src: hp, alt: "hp" },
+  { src: bar, alt: "bar" },
+  { src: link, alt: "link" },
+  { src: honeywell, alt: "honeywell" },
 ];
 
-const Platform = ({ ti, tf }) => {
+const Partners = ({ ti, tf }) => {
   const settings = {
-    slidesToShow: 10,
+    slidesToShow: 7,
     slidesToScroll: 2,
     speed: 500,
     arrows: false,
@@ -72,7 +70,7 @@ const Platform = ({ ti, tf }) => {
   return (
     <Trust $ti={ti} $tf={tf}>
       <SliderContainer>
-        <strong className="heading">The platforms work with us</strong>
+        <strong className="heading">Our Partners</strong>
         <div className="slider-wrapp">
           <Slider {...settings}>
             {platforms.map((platform, index) => (
@@ -87,4 +85,4 @@ const Platform = ({ ti, tf }) => {
   );
 };
 
-export default Platform;
+export default Partners;
