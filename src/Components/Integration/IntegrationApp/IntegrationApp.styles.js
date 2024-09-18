@@ -49,7 +49,7 @@ export const Card = styled.div`
 
 export const Image = styled.img`
   /* width: 100%; */
-  width: 550px;
+  /* width: 550px; */
   height: 350px;
 `;
 
