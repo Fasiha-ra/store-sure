@@ -2,6 +2,18 @@ import styled from "styled-components";
 export const HeroWrap =styled.div`
 background: var(--light-gray);
 padding: 30px 0 ;
+margin-bottom: 30px;
+@media (min-width: 992px){
+  margin-bottom: 50px;
+}
+.textwrap{
+  max-width: 649px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 .imgwrap {
   position: relative;
   background-image: url(${(props) => props.$bg}) ;

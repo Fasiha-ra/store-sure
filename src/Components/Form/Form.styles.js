@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const FormWrap=styled.div`
+export const FormWrap=styled.form`
 background-color: #B3DAB87D;
 border-radius: 16px;
 

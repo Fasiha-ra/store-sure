@@ -159,7 +159,19 @@ export const GlobalStyles = createGlobalStyle`
     }
 
   }
-  
+  .h2,h2{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    @media (min-width: 992px){
+      font-size: 30px;
+      line-height: 34px;
+    }
+    @media (min-width: 992px){
+      font-size: 40px;
+    line-height: 44px;
+    }
+  }
 
   p {
     margin: 0 0 15px;
@@ -219,5 +231,9 @@ export const GlobalStyles = createGlobalStyle`
     width: auto;
     
    }
+  }
+  .colored{
+  color: #51AB3B;
+
   }
 `;

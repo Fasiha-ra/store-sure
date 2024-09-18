@@ -4,26 +4,27 @@ export const InputWrap = styled.div`
   width: 100%;
   position: relative;
   label {
-      width: 100%;
-      padding: 0;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 120%;
-      color: var(--black);
-      z-index: 5;
-      display: flex;
-      margin-bottom: 10px;
-      @media screen and (min-width: 1441px) {
-        font-size: 18px;
-      }
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--black);
+    z-index: 5;
+    display: flex;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1441px) {
+      font-size: 18px;
+    }
   }
 `;
 
 export const StyledTexfield = styled.div`
   padding: 12px 25px;
   border-radius: 15px;
-  /* border-radius: ${({ $variant}) => $variant == 'input' ? '60px' : '20px'}; */
-  background:#F2F4F6;
+  /* border-radius: ${({ $variant }) =>
+    $variant == "input" ? "60px" : "20px"}; */
+  background: #f2f4f6;
   color: var(--black);
   position: relative;
   box-sizing: border-box;
@@ -33,28 +34,29 @@ export const StyledTexfield = styled.div`
     css`
       padding: 12px 20px;
     `}
-    textarea{
-      font-size: 16px;
-      font-weight: 300;
-      background-color: transparent;
-      height: 96px;
-      width: 100%;
-      border: none;
-      outline: none;
-      resize: none;
-      padding: 0;
+  textarea {
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    height: 96px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0;
+    color: var(--black);
+    &::placeholder {
       color: var(--black);
-      &::placeholder {
-        color: var(--black);
-      }
     }
+  }
 `;
- 
+
 export const StyledTextareaWrap = styled.div`
   padding: 12px 25px;
   border-radius: 20px;
   min-height: 120px;
-  background:#F2F4F6;
+  background: #f2f4f6;
   /* background-color: var(--light-gray); */
   color: var(--black);
   position: relative;
@@ -85,7 +87,7 @@ export const IconWrapper = styled.span`
 export const StyledInput = styled.input`
   border: none;
   outline: none;
-  background:transparent;
+  background: transparent;
   border-radius: 11px;
   color: var(--black);
   width: 100%;
@@ -101,18 +103,18 @@ export const StyledTextarea = styled.textarea`
   outline: none;
   background: transparent;
   color: var(--black);
-   width: 100%;
+  width: 100%;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   &::placeholder {
     color: var(--black);
   }
-`
+`;
 export const PhoneWrapper = styled.div`
-  .input-phone{
+  .input-phone {
     border-radius: 60px;
-    background:#F2F4F6;
+    background: #f2f4f6;
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -171,7 +173,6 @@ export const PhoneWrapper = styled.div`
       line-height: 22px;
       font-style: normal;
       font-weight: 500;
-      font-family: var(--base-font-sans-serif);
       &::placeholder {
         color: var(--gray-50);
       }
