@@ -14,10 +14,14 @@ import hamburger from "../../images/header/hamburger.svg";
 import { RxCross2 } from "react-icons/rx";
 
 import Button from "../Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
-
+  const navigate = useNavigate();
+  const clickHandler = () =>{
+  navigate("/contact-us")
+    
+  }
   return (
     <>
       <HeaderWrapper $navActive={showNav}>
@@ -43,7 +47,7 @@ const Header = () => {
               ))}
             </NavHolder>
             <ButtonWrap>
-              <Button className="btn-login" width="133px" type="primary">
+              <Button className="btn-login" width="133px" type="primary" onClick={clickHandler}>
                 Get a Quote
               </Button>
 
