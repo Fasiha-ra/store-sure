@@ -87,6 +87,7 @@ export const TextArea = styled.textarea`
   outline: none;
   resize: none;
   height: 50px;
+  font: caption;
   &:focus {
     border-bottom: 2px solid #000;
   }

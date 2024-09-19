@@ -236,4 +236,7 @@ export const GlobalStyles = createGlobalStyle`
   color: #51AB3B;
 
   }
+  .input-field{
+    font:caption !important;
+  }
 `;

@@ -61,6 +61,7 @@ export const StyledTextareaWrap = styled.div`
   color: var(--black);
   position: relative;
   box-sizing: border-box;
+  font:caption !important;
   width: 100%;
   ${({ $hasIcon }) =>
     $hasIcon &&
@@ -107,6 +108,7 @@ export const StyledTextarea = styled.textarea`
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  font: caption !important;
   &::placeholder {
     color: var(--black);
   }
